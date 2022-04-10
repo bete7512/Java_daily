@@ -1,0 +1,18 @@
+ public static void main(String[] args) {
+    Scanner get=new Scanner(System.in);
+    cipherkey pass = new cipherkey();
+    System.out.println("Enter string to be encrypted");
+    String str1 = get.nextLine();
+    System.out.println("Normal text of our input before encryption is = "+str1);
+    pass.SetNormal(str1);
+    String cipher = pass.GetEncrypted();
+    System.out.println("The cipher text of str1 after encryption is  "+cipher);
+    System.out.println("enter cipher txt to be dycrpted");
+    String str2 = get.nextLine();
+    pass.SetEncrypted(str2);
+    String normal = pass.GetDycrypted();
+    System.out.println("The normal text gained after decryption is  "+normal);
+    }
+    
+}
+
